@@ -199,13 +199,13 @@ export const ProductForm: React.FC<ProductFormProps> = ({
                                     <FormLabel>Category</FormLabel>
                                     <Select disabled={loading} onValueChange={field.onChange} value={field.value} defaultValue={field.value}>
                                         <FormControl>
-                                            <SelectTrigger aria-multiselectable={true}>
-                                                <SelectValue aria-multiselectable={true} defaultValue={field.value} placeholder="Select a category" />
+                                            <SelectTrigger >
+                                                <SelectValue defaultValue={field.value} placeholder="Select a category" />
                                             </SelectTrigger>
                                         </FormControl>
-                                        <SelectContent aria-multiselectable={true}>
+                                        <SelectContent >
                                             {categories.map((category) => (
-                                                <SelectItem aria-multiselectable={true} key={category.id} value={category.id}>{category.name}</SelectItem>
+                                                <SelectItem key={category.id} value={category.id}>{category.name}</SelectItem>
                                             ))}
                                         </SelectContent>
                                     </Select>
