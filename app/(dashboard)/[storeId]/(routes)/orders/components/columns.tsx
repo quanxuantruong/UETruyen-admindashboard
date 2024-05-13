@@ -26,6 +26,10 @@ export const columns: ColumnDef<OrderColumn>[] = [
         header: "Address",
     },
     {
+        accessorKey: "totalQuantity",
+        header: "Quantity",
+    },
+    {
         accessorKey: "totalPrice",
         header: "Total price",
     },

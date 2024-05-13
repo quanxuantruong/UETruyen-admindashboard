@@ -21,7 +21,7 @@ export const Overview: React.FC<OverviewProps> = ({
                 />
                 <YAxis
                     stroke="#888888"
-                    fontSize={11}
+                    fontSize={9}
                     tickLine={false}
                     axisLine={false}
                     tickFormatter={(value) => `${value}VND`}
